@@ -1,0 +1,107 @@
+make[1]: Entering directory '/home/xiaoq/Kernel/LOS/SukiSU/out'
+  GEN     ./Makefile
+scripts/kconfig/conf  --syncconfig Kconfig
+  GEN     ./Makefile
+  UPD     include/config/kernel.release
+-- SukiSU version: 12806
+-- SukiSU Manager signature size: 0x35c
+-- SukiSU Manager signature hash: 947ae944f3de4ed4c21a7e4f7953ecf351bfa2b36239da37a34111ad29993eef
+-- Supported Unofficial Manager: 5ec1cff (GKI) rsuntk (Non-GKI) ShirkNeko udochina (GKI and non-GKI and KPM)
+-- SukiSU: Manual hooking enabled!
+-- KERNEL_VERSION: 4.19
+-- KERNEL_TYPE: Non-GKI
+-- KPM is enabled
+-- SukiSU compat: Neither atomic_inc_not_zero nor atomic_long_inc_not_zero found in kernel/cred.c
+-- SukiSU compat: Using  in get_cred_rcu patch.
+-- SukiSU: checks ok. Found path_umount
+
+-- SUSFS_VERSION: v1.5.7
+  Using /home/xiaoq/Kernel/LOS/SukiSU/lxq_kernel_xiaomi_gauguin as source for kernel
+  UPD     include/generated/utsrelease.h
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon.dtb
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito.dtb
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-v2.dtb
+  CALL    /home/xiaoq/Kernel/LOS/SukiSU/lxq_kernel_xiaomi_gauguin/scripts/checksyscalls.sh
+  DTC     arch/arm64/boot/dts/vendor/qcom/orchid.dtb
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-atp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-cdp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-mtp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-qrd-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-rumi-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-v2-atp-lcd-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-v2-atp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-v2-cdp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-v2-mtp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lito-v2-qrd-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/gauguin-sm6350-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon-atp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon-cdp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon-mtp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon-mtp-usbc-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon-qrd-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/lagoon-rumi-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/orchid-cdp-overlay.dtbo
+  DTC     arch/arm64/boot/dts/vendor/qcom/orchid-mtp-overlay.dtbo
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  AR      init/built-in.a
+  CC      drivers/base/firmware_loader/fallback_table.o
+  CC      drivers/base/firmware_loader/main.o
+  CC      drivers/base/firmware_loader/fallback.o
+  AR      drivers/base/firmware_loader/built-in.a
+  AR      drivers/base/built-in.a
+  CC      kernel/trace/trace.o
+  AR      kernel/trace/built-in.a
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  AR      kernel/built-in.a
+-- SukiSU version: 12806
+-- SukiSU Manager signature size: 0x35c
+-- SukiSU Manager signature hash: 947ae944f3de4ed4c21a7e4f7953ecf351bfa2b36239da37a34111ad29993eef
+-- Supported Unofficial Manager: 5ec1cff (GKI) rsuntk (Non-GKI) ShirkNeko udochina (GKI and non-GKI and KPM)
+-- SukiSU: Manual hooking enabled!
+-- KERNEL_VERSION: 4.19
+-- KERNEL_TYPE: Non-GKI
+-- KPM is enabled
+-- SukiSU compat: Neither atomic_inc_not_zero nor atomic_long_inc_not_zero found in kernel/cred.c
+-- SukiSU compat: Using  in get_cred_rcu patch.
+-- SukiSU: checks ok. Found path_umount
+
+-- SUSFS_VERSION: v1.5.7
+  CC      drivers/kernelsu/ksu.o
+  CC      drivers/kernelsu/apk_sign.o
+  CC      drivers/kernelsu/sucompat.o
+/home/xiaoq/Kernel/LOS/SukiSU/lxq_kernel_xiaomi_gauguin/drivers/kernelsu/apk_sign.c:335:6: warning: stack frame size of 2336 bytes in function 'ksu_is_manager_apk' [-Wframe-larger-than=]
+bool ksu_is_manager_apk(char *path)
+     ^
+1 warning generated.
+  CC      drivers/kernelsu/core_hook.o
+  CC      drivers/kernelsu/ksud.o
+  CC      drivers/kernelsu/kpm/super_access.o
+  AR      drivers/kernelsu/kpm/built-in.a
+  AR      drivers/kernelsu/built-in.a
+  DTBOIMG arch/arm64/boot/dtbo.img
+  CC      drivers/mtd/mtdoops.o
+  AR      drivers/mtd/built-in.a
+  AR      drivers/built-in.a
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  AR      init/built-in.a
+  AR      built-in.a
+  MODPOST vmlinux.o
+WARNING: EXPORT symbol "gsi_write_channel_scratch" [vmlinux] version generation failed, symbol will not be versioned.
+  KSYM    .tmp_kallsyms1.o
+  KSYM    .tmp_kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  OBJCOPY arch/arm64/boot/Image
+  Building modules, stage 2.
+  MODPOST 0 modules
+WARNING: EXPORT symbol "gsi_write_channel_scratch" [vmlinux] version generation failed, symbol will not be versioned.
+make[1]: Leaving directory '/home/xiaoq/Kernel/LOS/SukiSU/out'
